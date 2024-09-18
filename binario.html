@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="#00ffff">
+        <div id="menu" style="display: flex; justify-content: center; gap: 10px;">
+                <a href="SamuLeMachine.html">Decimal</a>
+                <a href="binario.html">Binario</a>
+                <a href="octal.html">Octal</a>
+                <a href="hexadecimal.html">Hexadecimal</a>
+        </div>
+    <div id="principal">
+        <h1>Conversor SamuLe</h1>
+       
+        
+
+<br><br>
+
+        <h3>Digite numero em Binário</h3>
+       
+        <input id="demo1" type="text" placeholder="Digite o valor em binario">
+        
+<br><br>
+
+        <h3>converter para:</h3>
+
+
+        <input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
+<br>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(79, 199, 23); width: 15%; height: 40px; font-weight: 500;" id="demo2"></div>
+
+<br><br>
+
+        <input onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
+<br>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(185, 40, 40); width: 15%; height: 40px; font-weight: 500;" id="demo3"></div>
+        
+<br><br>
+
+        <input onclick="aparecer_bin()" type="checkbox"><b id="">Decimal</b>
+<br>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(125, 80, 209); width: 15%; height: 40px; font-weight: 500;" id="demo4"></div>
+
+<br><br>
+
+<button onclick="converterBinario()">Converter Binario</button>
+
+</div>
+<script>
+
+function converterBinario() {
+    
+    var binario = Number (demo1.value);
+
+var decimal = parseInt (binario, 2)
+let octal = decimal.toString(8);
+
+let hexadecimal = decimal.toString(16);
+
+let decimal1 = decimal
+
+console.log (decimal);
+console.log (octal);
+console.log (hexadecimal);
+console.log (decimal1);
+
+document.getElementById("demo1").innerHTML = ` ${decimal}`;
+document.getElementById("demo2").innerHTML = ` ${octal}`;
+document.getElementById("demo3").innerHTML = ` ${hexadecimal}`;
+document.getElementById("demo4").innerHTML = ` ${decimal1}`;
+}
+
+function aparecer_bin() {
+    demo4.style.display = 'block'
+}
+
+function aparecer_hexa() {
+    demo3.style.display = 'block'
+}
+
+function aparecer_octal() {
+    demo2.style.display = 'block'
+}
+document.bgColor = "#00ffff";
+</script></body></html>

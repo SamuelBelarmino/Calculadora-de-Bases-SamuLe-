@@ -1,0 +1,23 @@
+*{padding: 0; margin: 0;}
+
+body {
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNTW6ti8IEOPtZI-UrpQK_kMyx15XvqlXixP4n3GPTf32D9WwIK3LJy6cXm07lE6dzM5TMbzNDTZ-GnFysZarpRCVnKaJrcg82ZBa7NAtRFpg42iVa2ULUwtmYRHvva3kJ7OHb2fqouCg/s1600/6.jpg);
+    
+}
+
+#principal {
+background-color: rgba(255, 255, 255, 0.8);
+align-items: center; 
+width: 25%;
+margin: 10% 37%;
+border-radius: 18px;
+}
+
+#menu a{
+padding: 8px;
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: 10px;
+display: flex; 
+margin-top: 30px;
+
+}
